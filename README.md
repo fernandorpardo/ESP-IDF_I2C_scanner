@@ -1,5 +1,5 @@
 # ESP-IDF I2C scanner
-This is I2C scanner such as the one from ["i2c/scanner"](https://github.com/nkolban/esp32-snippets/tree/master/i2c/scanner), but for the so call new I2C driver. 
+This is I2C scanner such as the one from ["i2c/scanner"](https://github.com/nkolban/esp32-snippets/tree/master/i2c/scanner), but for the as of today (Nov'24) so called new I2C driver. 
  
 The project takes as baseline the ESP-IDF's hello_world example (c) 2010-2022 Espressif Systems
  
@@ -8,7 +8,7 @@ Code is genearted using **ESP-IDF v5.4-dev-2194-gd7ca8b94c8** for linux running 
 The target platform is ESP32-H2-DevKitM-1
 
 ## Description
-The new (by Nov'24) driver is much more loquacious than the old one. This is probably because it is still in a debugging phase, and it is likely the issue now reported will change shoortly.
+The new driver is much more loquacious than the old one. This is probably because it is still in a debugging phase, and it is likely the issue now reported will change shoortly.
 
 By default, for a unsuccessful write operaction that does not result in an ACK at bus level, which is the expected behavoiur for detecting an unattended address, the driver shows 3 traces
 
@@ -42,4 +42,4 @@ Once you get rid of the traces the otput is clean and looks like this
 ```
 
 ## Build
-Follow the regular process to generate the flash image and download into the target device ["Configure Your Projec"](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-macos-setup.html#configure-your-project)
+Follow the regular process to generate the flash image and download it into the target device ["Configure Your Projec"](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-macos-setup.html#configure-your-project)
